@@ -1,0 +1,242 @@
+header {
+    position: fixed;
+    top:0;
+    width:100%;
+    height:84.28px;
+    font-weight: 700;
+    background-color: transparent;
+    z-index:10;
+    transition: all .4s ease;
+}
+.shadow {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 130px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, .45) 0%, rgba(0, 0, 0, .45) 37%, rgba(0, 0, 0, 0) 100%);
+}
+#logo {
+    position: absolute;
+    top: 0px;
+    left:50px;
+}
+.logo-white {
+    position: absolute;
+    width: 240px;
+    top: 10px;
+    left:25px;
+}
+.phone {
+    color:white;
+}
+header #hr-nav {
+    width:90%;
+    margin: auto;
+}
+header #hr-nav ul {
+    position:absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 5%;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content:flex-end;
+    align-items: center;
+    font-size: 17px;
+}
+.header-shadow {
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.15);
+}
+.white {
+    background-color: #fff;
+}
+.nav-item {
+    display: inline-block;
+    padding-right: 20px;
+}
+.nav-item:first-child {
+    padding-right:5px;
+}
+.nav-link {
+    color:#fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+.nav-link:hover{
+    color:#0073AA;
+}
+header #hr-nav ul li:nth-child(3) {
+    padding-right: 0px;
+}
+.button {
+    background-color: #609e29;
+    color: #fff !important;
+    border-radius: 4px;
+    padding: 6px 15px;
+    /* box-shadow: 0px -2px 1px rgba(72,73,69, 0.5) inset; */
+    box-shadow: inset 0 64px 40px -40px rgba(255,255,255,.1), inset 0 -2px 0 rgba(0,0,0,.2), 0 1px 2px rgb(0,0,0,.15);;
+    text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+    transition: all .3s ease-in-out;
+}
+.button:hover {
+    background-color: #56862d;
+    color: #fff !important;
+}
+.no-space {
+    letter-spacing: 0px;
+    padding-right:0px;
+}
+.lang-sep {
+    color:#898989;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+  
+.tooltip .tooltiptext {
+    visibility: hidden;
+    opacity: 0;
+    width: 100px ;
+    background-color: #0078AE;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+    border-radius: 5px;
+    padding: 10px 0; 
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    letter-spacing: 0px;
+    line-height: 0px;
+}
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%; 
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #0078AE transparent transparent transparent;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    animation: fade-in .5s forwards;
+  }
+
+@keyframes fade-in {
+    0% {opacity:0}
+    100% {opacity:1}
+}
+#button, #cart, #burger-nav, #side-nav {
+    display:none;
+}
+
+@media screen and (max-width:892px) {
+    header #hr-nav ul {
+        display:none;
+    }
+    #logo, .logo-white {
+        left:50%;
+        transform: translateX(-50%);
+    }
+    .logo-white {
+        width:179px;
+    }
+    #button {
+        display:block;
+        position:absolute;
+        font-weight: 700;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom:100px;
+    }
+    #button:hover {
+        background-color:#609e29;
+        opacity: 0.9;
+    }
+    #cart {
+        display:block;
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        right:20px;
+        cursor: pointer;
+    }
+    .cart-icon {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        width: 20px;
+        height: 20px;
+        line-height: 21px;
+        background-color: #609e29;
+        border-radius: 50%;
+        color: #fff;
+        font-size: 14px;
+        border: 2px solid #fff;
+        font-weight: bold;
+        text-align: center;
+    }
+    .cart-icon span {
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform:translate(-50%, -50%);
+    }
+    #burger-nav {
+        display:block;
+        position:absolute;
+        top:50%;
+        transform: translateY(-50%);
+        left:20px;
+        opacity: .7;
+        cursor: pointer;
+    }
+    #side-nav {
+        position: fixed;
+        left:0;
+        height: 100%;
+        width:240px;
+        background-color: #fff;
+        box-shadow: 0 5px 10px #0D6490 ; 
+        transition: all .3ms ease-in;
+    }
+    #side-nav li {
+        border-bottom: 1px solid rgba(13, 100, 144, 0.6);
+    }
+    #side-nav ul li a {
+        position: relative;
+        display: block;
+        margin: 5px 0;
+        padding: 10px 15px;
+        font-size: 15px;
+        color: #0d6490;
+        line-height: 17px;
+        text-decoration: none;
+        text-align: left;
+    }
+    #side-nav li:nth-child(3) a {
+      text-align:center;
+      width:180px;
+      margin: 5px auto;
+    }
+    #side-nav li:last-child  {
+        display:flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .show-phone {
+        background: url("https://www.dominos.bg/images/footer_icons/tel_blue.svg") 90% center no-repeat;
+            background-size: auto;
+            background-size: 30px 30px;
+    }
+}

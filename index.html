@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domino's Pizza | Пица</title>
+    <meta name="description" content="Domino’s пица избира пресни продукти и е лидер в доставките на пица. Следи офертите с отстъпка и поръчай онлайн чрез сайта или приложението. ">
+    <meta name="title" content="Domino's Pizza | Пица">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link rel="img_source" href="https://www.dominos.bg/images/thumbnail_4_fb.png">
+    <link rel="shortcut_icon" href="https://www.dominos.bg/lib/dominos_new.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/navigations/main-nav.css">
+    <link rel="stylesheet" href="public/css/navigations/carousel.css">
+    <link rel="stylesheet" href="public/css/offers.css">
+    <link rel="stylesheet" href="public/css/menu.css">
+    <link rel="stylesheet" href="public/css/footer.css">
+    <link rel="stylesheet" href="public/css/popup.css">
+    <link rel="stylesheet" href="public/css/swiper-menu.css">
+
+</head>
+<body class="body" onresize="hide()">
+    <div id="loading" class="center">
+        <img src="https://www.dominos.bg/images/preloader-small-fast.gif" alt="pizza loader">
+    </div>
+    <div class="shadow"></div>
+    <header id="header">
+    <div id="main-header">
+        <a href="#" id="logo"><img class="logo-white" src="public/img/logo-white.png" width="280px" alt="logo"></a>
+        <nav id="hr-nav">
+            <ul>
+                <li class="nav-item tooltip"><a href="#" class="nav-link phone"><p class="tooltiptext">ОБАДЕТЕ НИ СЕ</p><img id="phone" src="public/img/call.png"  width="30px" alt=""></a></li>
+                <li class="nav-item"><a href="#" class="nav-link no-space">070012525</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">BG</a></li>
+                <li class="nav-item no-space lang-sep">|</li>
+                <li class="nav-item"><a href="#" class="nav-link">EN</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">МЕНЮ</a></li>
+                <li class="nav-item"><a href="#" class="nav-link button">ПОРЪЧАЙ СЕГА</a></li>
+            </ul>
+        </nav>
+    </div> 
+        <nav id="side-nav">
+            <ul>
+                <li class="show-phone"><a href="#">ОБАДЕТЕ НИ СЕ</a></li>
+                <li><a href="#">МЕНЮ</a></li>
+                <li><a href="#" class="button" style="color:#fff;">ПОРЪЧАЙ СЕГА</a></li>
+                <li><a href="#">СВЪРЖЕТЕ СЕ С НАС</a></li>
+                <li><a href="#">УСЛОВИЯ ЗА ПОЛЗВАНЕ</a></li>
+                <li><a href="#">РЕСТОРАНТИ</a></li>
+                <li><a href="#">АЛЕРГЕНИ</a></li>
+                <li><a href="#">ПОЛИТИКА ЗА ЗАЩИТА НА ЛИЧНИТЕ ДАННИ</a></li>
+                <li><a href="#">BG</a> <span style="color: #0d6490">|</span> <a href="#">EN</a></li>
+            </ul>
+            
+        </nav>
+        <div id="burger-nav" onclick="showSideBar()">
+            <img id="nav-menu-icon" src="public/img/menu.png" width="64px" alt="menu">
+        </div>
+        <div id="cart">
+            <img src="public/img/basket.svg" width="44px" alt="cart">
+            <div class="cart-icon"><span>0</span></div>
+        </div>
+    </header>
+
+    <div class="main-slider">
+        <div id="carousel">
+            <figure>
+                <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/550_bg_banner.jpg')"></div>
+                <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/549_bg_banner.jpg')"></div>
+                <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/548_bg_banner.jpg')"></div>
+                <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/547_bg_banner.jpg')"></div>
+                <!-- <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/528_bg_banner.jpg')"></div>
+                <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/526_bg_banner.jpg')"></div> -->
+                <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/416_bg_banner.jpg')"></div>
+                <div id="" class="slide" style="background-image: url('https://www.dominos.bg/images/banners/406_bg_banner.jpg')"></div>
+            </figure>
+            <div id="button"><a href="#" class="nav-link button">ПОРЪЧАЙ СЕГА</a></div>
+        </div>
+        <a href="#scroll"><img src="public/img/scroll-down-arrow.png" class="scroll-down-arrow" alt="scroll down arrow"></a>
+    </div>
+
+    <!-- Offers menu with cards and side scroll start - offers.css -->
+    <div id="scroll" class="content">
+        <h1>Domino's оферти</h1>
+        <div class="slider">
+                <div class="card">
+                    <div class="card-header" style="background-image: url(https://www.dominos.bg/images/offers/849l.png)"></div>
+                        <div>
+                            <img src="https://www.dominos.bg/images/offer_ribbon_bg.svg" width="150px" alt="ribbon">
+                        </div>
+                        <p class="card-heading">
+                            Голяма пица + пилешко предястие + 2 бр. Coca-Cola 500мл – само за 18,10лв!
+                        </p>
+                        <p class="grey-line"></p>
+                        <p class="card-info">
+                            Комбинирайте любимата си голяма пица с пилешко предястие по избор и 2бр. Кока-Кола 500мл само за 18,10лв! 
+        *за тесто с Филаделфия се доплаща 2.25лв
+                        </p>
+                        <div class="grab-offer">
+                            <a href="#">ВЗЕМИ ТАЗИ ОФЕРТА!</a>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-half" style="border-right: 1px solid #d7d7d7;">
+                                <img src="https://www.dominos.bg/images/delivery_bike.svg" width="25px"  height="40px" alt="delivery bike">
+                                <span>ДОСТАВКА</span>
+                            </div>
+                            <div class="card-footer-half">
+                                <img src="https://www.dominos.bg/images/carry_out_store.svg" width="25px" height="40px" alt="carry out store">
+                                <span>CARRY-OUT</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-m">
+                        <div class="card-header" style="background-image:url(https://www.dominos.bg/images/offers/850l.png)"></div>
+                        <div>
+                            <img src="https://www.dominos.bg/images/offer_ribbon_bg.svg" width="150px" alt="ribbon">
+                        </div>
+                        <p class="card-heading">
+                            Пица от място само за 6 лв
+                        </p>
+                        <p class="grey-line"></p>
+                        <p class="card-info">
+                            Вземете сега средна пица Шунка класик, Хавай, Карбонара или Гардън класик от място само за 6.лв
+                        </p>
+                        <div class="grab-offer">
+                            <a href="#">ВЗЕМИ ТАЗИ ОФЕРТА!</a>
+                        </div>
+                        <div class="card-footer">
+                            <img src="https://www.dominos.bg/images/carry_out_store.svg" width="25px" height="40px" alt="carry out store">
+                            <span>CARRY-OUT</span> 
+                        </div>
+                    </div>
+                    <div class="card card-lg">
+                        <div class="card-header" style="background-image:url(https://www.dominos.bg/images/offers/928l.png)"></div>
+                        <div>
+                            <img src="https://www.dominos.bg/images/offer_ribbon_bg.svg" width="150px" alt="ribbon">
+                        </div>
+                        <p class="card-heading">
+                            Nirvana Combo
+                        </p>
+                        <p class="grey-line"></p>
+                        <p class="card-info">
+                            Две средни пици + два сладоледа Nirvana само за 22,70лв.
+                        </p>
+                        <div class="grab-offer">
+                            <a href="#">ВЗЕМИ ТАЗИ ОФЕРТА!</a>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-half" style="border-right: 1px solid #d7d7d7;">
+                                <img src="https://www.dominos.bg/images/delivery_bike.svg" width="25px"  height="40px" alt="delivery bike">
+                                <span>ДОСТАВКА</span>
+                            </div>
+                            <div class="card-footer-half">
+                                <img src="https://www.dominos.bg/images/carry_out_store.svg" width="25px" height="40px" alt="carry out store">
+                                <span>CARRY-OUT</span> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card card-xl">
+                        <div class="card-header" style="background-image:url(https://www.dominos.bg/images/offers/943l.png)"></div>
+                        <div>
+                            <img src="https://www.dominos.bg/images/offer_ribbon_bg.svg" width="150px" alt="ribbon">
+                        </div>
+                        <p class="card-heading">
+                            Пица+предястие+2бр Шуменско за 19.10
+                        </p>
+                        <p class="grey-line"></p>
+                        <p class="card-info">
+                            Комбинирайте голяма пица + пилешко предястие + 2бр.Шуменско кен 0.5л само за 19,10лв.! 
+        *за тесто с Филаделфия се доплаща 2.25лв
+                        </p>
+                        <div class="grab-offer">
+                            <a href="#">ВЗЕМИ ТАЗИ ОФЕРТА!</a>
+                        </div>
+                        <div class="card-footer">
+                            <div class="card-footer-half" style="border-right: 1px solid #d7d7d7;">
+                                <img src="https://www.dominos.bg/images/delivery_bike.svg" width="25px"  height="40px" alt="delivery bike">
+                                <span>ДОСТАВКА</span>
+                            </div>
+                            <div class="card-footer-half">
+                                <img src="https://www.dominos.bg/images/carry_out_store.svg" width="25px" height="40px" alt="carry out store">
+                                <span>CARRY-OUT</span> 
+                            </div>
+                        </div>
+                        
+                    <!-- </div> -->
+                </div>
+                
+            <img src="https://www.dominos.bg/images/slider_arrow_left.svg" id="prevSlide" class="slider-arrow" alt="Left slide arrow">
+            <img src="https://www.dominos.bg/images/slider_arrow_right.svg" id="nextSlide" class="slider-arrow" alt="Right slide arrow">
+        </div>
+        <!-- Offers menu with cards and side scroll offers.css END -->
+
+        <!-- last menu - > menu.css start-->
+        <div class="menu">
+            <div class="menu-left">
+                <div class="red">
+                    <h2 class="decoration decoration-img">PIZZA TRACKER</h2>
+                    <h3 class="white-subheading">Следете поръчката си с нашия уникален Pizza Tracker!</h3>
+                    <div class="black-btn"> 
+                        <a href="#">ПРОСЛЕДЕТЕ ПОРЪЧКАТА СИ СЕГА!</a>
+                    </div>
+                </div>
+                <div class="red">
+                    <h2 class="decoration decoration-img">Кариери</h2>
+                    <h3 class="white-subheading">Моля попълнете формуляра</h3>
+                    <div class="black-btn" style="margin-top: 30px;">
+                        <a href="#">КАНДИДАСТВАНЕ ЗА РАБОТА</a>
+                    </div>
+                </div>
+                <div class="blue newsletter">
+                    <h2 class="decoration decoration-img">АБОНИРАЙТЕ СЕ ЗА НАШИЯ NEWSLETTER</h2>
+                    <h3 class="white-subheading">Абонирайте се за нашия newsletter и първи научавайте за горещите ни оферти!</h3>
+                    <div class="white-btn">
+                        <a href="#">Subscribe</a>
+                    </div>
+                </div>
+                <div class="blue skype">
+                    <h2 class="decoration decoration-img">ПОРЪЧАЙТЕ ПРЕЗ SKYPE</h2>
+                    <h3 class="white-subheading">Поръчайте като ни се обадите през Skype!</h3>
+                    <div class="white-subheading" style="margin-top:30px;">
+                        <a href="#">
+                            <img src="https://secure.skypeassets.com/i/scom/images/skype-buttons/callbutton_trans_32px.png" alt="skype">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-right">
+                <div>
+                    <h2 class="decoration decoration-img">DOMINO'S PIZZA APP</h2>
+                    <h3 class="white-subheading">Поръчайте онлайн чрез безплатното ни приложение. Свалете сега тук!</h3>
+                    <div id="app">
+                        <div class="app-icons">
+                            <img src="https://www.dominos.bg/images/apple_icon.svg" alt="apple icon">
+                        </div>
+                        <span id="amp-divider">&</span>
+                            <div class="app-icons">
+                        <img src="https://www.dominos.bg/images/android_icon.svg" alt="android icon">
+                    </div>
+                    </div>
+                    
+                    <img src="https://www.dominos.bg/images/iphone_6_new_bg.png" id="iphone-pic" alt="iphone">
+                </div>
+            </div>
+            <div class="xs-only">
+                <a href="#"><img src="public/img/order-now-mobile.png" width="500px" alt="order now"></a>
+            </div>
+        </div>
+    </div>
+    <!-- last menu - > menu.css END -->
+    <footer>
+        <div id="footer-wrap">
+            <div id="first-footer">
+                <ul>
+                    <li>МЕНЮ</li>
+                    <li>РЕСТОРАНТИ</li>
+                    <li>СВЪРЖЕТЕ СЕ С НАС</li>
+                    <li>УСЛОВИЯ НА ПОЛЗВАНЕ</li>
+                    <li>АЛЕРГЕНИ</li>
+                    <li>КАНДИДАСТВАНЕ ЗА РАБОТА</li>
+                    <li>ПОЛИТИКА ЗА ЗАЩИТА НА ЛИЧНИТЕ ДАННИ</li>
+                </ul>
+            </div>
+            <div id="second-footer">
+                <ul>
+                    <li class="tooltip"><a href="#"><img src="https://www.dominos.bg/images/footer_icons/tel.svg" alt="telephone"><span class="tooltiptext">070012525</span></a></li>
+                    <li class="tooltip"><a href="#"><img src="https://www.dominos.bg/images/footer_icons/070012525.svg" alt="telephone number"><span class="tooltiptext">070012525</span></a></li>
+                    <li class="tooltip"><a href="#"><img src="https://www.dominos.bg/images/footer_icons/facebook.svg" alt="facebook"><span class="tooltiptext">Facebook</span></a></li>
+                    <li class="tooltip"><a href="#"><img src="https://www.dominos.bg/images/footer_icons/twitter.svg" alt="twitter"><span class="tooltiptext">Twitter</span></a></li>
+                    <li class="tooltip"><a href="#"><img src="https://www.dominos.bg/images/footer_icons/instagram.svg" alt="instagram"><span class="tooltiptext">Instagram</span></a></li>
+                    <li class="tooltip"><a href="#"><img src="https://www.dominos.bg/images/footer_icons/googleplus.svg" alt="googleplus"><span class="tooltiptext">Google+</span></a></li>
+                    <li class="tooltip"><a href="#"><img src="https://www.dominos.bg/images/footer_icons/youtube.svg" alt="youtube"><span class="tooltiptext">Youtube</span></a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div id="final-footer">&copy; 2021 Domino's Pizza. All Rights Reserved</div>
+    </footer>
+    <div id="popup-dim">
+        
+        <div id="popup-window">
+            <div id="close-icon" onclick=popup()><img src="https://www.dominos.bg/images/close_x.svg" alt="close icon"></div>
+            <div id="form-field">
+              
+                <div class="button-facebook">
+                    <a href="#" ><img src="public/img/facebook-app-symbol.png" width="20px" alt="facebook">| Facebook</a>
+                </div>
+                <form action="">
+                    <input type="email" placeholder="E-mail">
+                    <input type="password" placeholder="парола">
+                    <div id="form-checkbox">
+                        <a href="#">Забравена парола</a>
+                        <div>
+                            <input type="checkbox" name="remember_token" id="remember_me" checked>
+                            <label for="remember_me">Запомни ме</label>
+                        </div>    
+                    </div>
+                </form>
+
+                <div class="registration">
+                    <a href="#" class="button btn-login">Вход</a>
+                    <p>Нов член? Регистрация</p>
+                    <a class="button btn-sign-in" href="#">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="public/js/app.js"></script>
+</body>
+</html>

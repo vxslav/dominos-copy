@@ -1,0 +1,50 @@
+.main-slider {
+    position:relative;
+} 
+.scroll-down-arrow {
+    position:absolute;
+    bottom:20px;
+    z-index:10;
+    left:50%;
+    transform: translateX(-50%);
+    animation: slide .75s ease infinite alternate;
+}
+@keyframes slide {
+    from {
+        transform: translateY(0);
+    }
+    to {
+        transform: translateY(-10px);
+    }
+}
+#carousel {
+    overflow: hidden;
+}
+#carousel figure {
+    position: relative;
+    width: 600%;
+    margin:0;
+    left:0;
+    animation: 50s slider ease-out forwards;
+}
+.slide {
+    width:16.666666%;
+    float:left;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+@keyframes slider {
+    0% {left:0;}
+    13% {left:0;}
+    15% {left:-100%;}
+    33% {left:-100%;}
+    35% {left:-200%;}
+    53% {left:-200%;}
+    55% {left:-300%;}
+    73% {left:-300%;}
+    75% {left:-400%;}
+    93% {left:-400%;}
+    95% {left:-500%;}
+    100% {left:-500%;} 
+}        

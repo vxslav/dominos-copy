@@ -1,0 +1,177 @@
+.menu {
+    width: 100%;
+    margin: 0 auto;
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+}
+.menu-left {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    column-gap: 7px;
+    align-content: space-between;
+    align-items: stretch;
+    width: 70%;
+}
+.menu-right {
+    position: relative;
+    max-width:30%;
+    height: 650px;
+    padding: 20px 20px 0 20px;
+    background-color: #323232;
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+
+}
+.red {
+    height:200px;
+    width: 48.5%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #DB092E;
+    border-radius: 4px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+}
+
+.blue {
+    width:98%;
+    height:220px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 3px;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.2);
+}
+.skype {
+    background-color: #2FAADE;
+}
+.newsletter {
+    background-color: #0F74A8;
+}
+.decoration-img{
+    color: #fff;
+    background-image: url(https://www.dominos.bg/images/decor_elem_left_white.svg), url(https://www.dominos.bg/images/decor_elem_right_white.svg);
+}
+.decoration {
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-align: center;
+    background-position: -0.5% center, 100% center;
+    background-size: 30px;
+    background-repeat: no-repeat;
+}
+.white-subheading {
+    color:#fff;
+    width:90%;
+    margin: 15px auto;
+    font-size: 17px;
+    text-align: center;
+}
+.black-btn {
+    background-color: #000;
+    margin: 0 auto;
+    height: 50px;
+    max-width:250px;
+    border-radius: 4px;
+    text-align: center;
+    padding:10px 20px 5px;
+}
+.black-btn:hover {
+    background-color: #160004;
+    cursor:pointer;
+}
+.black-btn a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 2px;
+    line-height: 1.5em;
+}
+.white-btn {
+    background-color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 4px;
+    max-width: 80%;
+    margin:0 auto;
+}
+.white-btn:hover {
+    background-color: #E6F0F6;
+    cursor:pointer;
+}
+.white-btn a {
+    color: #0F74A8;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+#app {
+    display: flex;
+    flex-flow:row nowrap;
+    justify-content: space-around;
+}
+#amp-divider {
+    color:#fff;
+    font-size: 25px;
+    font-weight: 700;
+    align-self: center;
+}
+.app-icons {
+    color:#fff;
+    width: 75px;
+    height: 75px;
+}
+.app-icons img {
+    vertical-align: middle;
+}
+#iphone-pic {
+    position: absolute;
+    bottom:0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.xs-only {
+    display:none;
+}
+@media screen and (max-width:992px)  {
+   
+    .menu-left {
+        flex-direction:column;
+        gap:10px;
+    }
+    .red {
+        min-width:98%;
+    }
+    #iphone-pic {
+        max-width:75%;
+    }
+}
+@media screen and (max-width:768px) {
+    .menu {
+        flex-direction: column;
+        min-width:100%;
+        justify-content: center;
+        align-items: center;
+        gap:10px;
+    }
+    .menu-left {
+        min-width: 100%;
+    }
+    #iphone-pic {
+        display:none;
+    }
+    .menu-right {
+        min-width:100%;
+        height: auto;
+        padding: 20px;
+    }
+    .xs-only {
+        display:block;
+        margin:30px;
+        text-align: center;
+    }
+}
